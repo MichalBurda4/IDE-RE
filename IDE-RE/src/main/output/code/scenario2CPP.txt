@@ -1,0 +1,42 @@
+class Rezerwacja_Pokoju_Hotelowego {
+public:
+	void wybiera(const std::string& argument){}
+
+	void przetwarza(const std::string& argument){}
+
+	void wprowadza(const std::string& argument){}
+
+	void wyswietla_sie(const std::string& argument){}
+
+	void Przeniesienie(const std::string& argument){}
+
+	void run(){
+		std::string specyfikacja_pokoju;
+		std::string dane_osobiste;
+		std::string prosba;
+		std::string rezerwacja;
+		std::string brak_odpowiedniego_pokoju;
+		std::string strona_glowna;
+		std::string zle_podane_dane;
+
+		wybiera(specyfikacja_pokoju);
+		przetwarza(specyfikacja_pokoju);
+
+		if(brak_odpowiedniego_pokoju){
+			wyswietla sie(brak_odpowiedniego_pokoju);
+			Przeniesienie(strona_glowna);
+			return;
+		}
+		wprowadza(dane_osobiste);
+		przetwarza(dane_osobiste);
+
+		if(zle_podane_dane){
+			wyswietla sie(zle_podane_dane);
+			Przeniesienie(strona_glowna);
+			return;
+		}
+		wprowadza(prosba);
+		przetwarza(prosba);
+		wyswietla_sie(rezerwacja);
+	}
+}

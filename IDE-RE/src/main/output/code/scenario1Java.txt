@@ -1,0 +1,28 @@
+public class Placenie_gotowka {
+
+	public void wybiera(String argument){}
+
+	public void wprowadza(String argument){}
+
+	public void przetwarza(String argument){}
+
+	public void wyswietla_sie(String argument){}
+
+	public void Przeniesienie(String argument){}
+
+	public void run(){
+
+		String platnosc_gotowka, kwota, reszta, brak_srodkow_w_kasie, punktu_1;
+
+		wybiera(platnosc_gotowka);
+		wprowadza(kwota);
+		przetwarza(kwota);
+
+		if(brak_srodkow_w_kasie){
+			wyswietla sie(brak_srodkow_w_kasie);
+			Przeniesienie(punktu_1);
+			return;
+		}
+		wyswietla_sie(reszta);
+	}
+}

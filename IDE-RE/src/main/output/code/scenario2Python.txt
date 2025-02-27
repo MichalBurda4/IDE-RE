@@ -1,0 +1,45 @@
+class Rezerwacja_Pokoju_Hotelowego:
+
+	def wybiera(self, argument):
+		pass
+
+	def przetwarza(self, argument):
+		pass
+
+	def wprowadza(self, argument):
+		pass
+
+	def wyswietla_sie(self, argument):
+		pass
+
+	def Przeniesienie(self, argument):
+		pass
+
+	def run(self):
+		specyfikacja_pokoju = None
+		dane_osobiste = None
+		prosba = None
+		rezerwacja = None
+		brak_odpowiedniego_pokoju = None
+		strona_glowna = None
+		zle_podane_dane = None
+
+		self.wybiera(specyfikacja_pokoju)
+		self.przetwarza(specyfikacja_pokoju)
+
+		if brak_odpowiedniego_pokoju:
+			self.wyswietla sie(brak_odpowiedniego_pokoju)
+			self.Przeniesienie(strona_glowna)
+			return
+
+		self.wprowadza(dane_osobiste)
+		self.przetwarza(dane_osobiste)
+
+		if zle_podane_dane:
+			self.wyswietla sie(zle_podane_dane)
+			self.Przeniesienie(strona_glowna)
+			return
+
+		self.wprowadza(prosba)
+		self.przetwarza(prosba)
+		self.wyswietla_sie(rezerwacja)

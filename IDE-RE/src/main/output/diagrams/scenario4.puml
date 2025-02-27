@@ -1,0 +1,20 @@
+@startuml
+[*] --> S2 : "utworz Wykorzystanie_punktow" 
+state "wprowadza karta_na_punkty" as S2
+state "przetwarza karta_na_punkty" as S3
+S2 --> S3
+state "wybiera przedmiot_za_punkty" as S4
+state "Decyzja" as D4
+S3 --> D4 : Decyzja
+state "wyswietla sie brak_punktow_na_koncie" as A5
+D4 --> A5 : Alternatywny przepływ
+A5 --> [*] : Powrót do strony startowej
+D4 --> S4 : Główny przepływ
+state "wprowadza przedmiot_za_punkty" as S6
+S4 --> S6
+state "przetwarza przedmiot_za_punkty" as S7
+S6 --> S7
+state "wyswietla sie ilosc_punktow" as S8
+S7 --> S8
+S8 --> [*] : Koniec
+@enduml

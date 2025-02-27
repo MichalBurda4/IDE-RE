@@ -1,0 +1,18 @@
+@startuml
+[*] --> S2 : "utworz Placenie_gotowka" 
+state "wybiera platnosc_gotowka" as S2
+state "wprowadza kwota" as S3
+S2 --> S3
+state "przetwarza kwota" as S4
+S3 --> S4
+state "wyswietla sie reszta" as S5
+state "Decyzja" as D5
+S4 --> D5 : Decyzja
+state "wyswietla sie brak_srodkow_w_kasie" as A6
+D5 --> A6 : Alternatywny przepływ
+state "Przeniesienie punktu 1" as A7
+A6 --> A7 : Alternatywny przepływ
+A7 --> S2
+D5 --> S5 : Główny przepływ
+S5 --> [*] : Koniec
+@enduml

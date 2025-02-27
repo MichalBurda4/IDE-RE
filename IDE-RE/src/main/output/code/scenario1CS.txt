@@ -1,0 +1,29 @@
+public class Placenie_gotowka 
+{
+	public void wybiera(string argument){}
+
+	public void wprowadza(string argument){}
+
+	public void przetwarza(string argument){}
+
+	public void wyswietla_sie(string argument){}
+
+	public void Przeniesienie(string argument){}
+
+	public void run()
+	{
+		string platnosc_gotowka, kwota, reszta, brak_srodkow_w_kasie, punktu_1;
+
+		wybiera(platnosc_gotowka);
+		wprowadza(kwota);
+		przetwarza(kwota);
+
+		if(brak_srodkow_w_kasie)
+		{
+			wyswietla sie(brak_srodkow_w_kasie);
+			Przeniesienie(punktu_1);
+			return;
+		}
+		wyswietla_sie(reszta);
+	}
+}

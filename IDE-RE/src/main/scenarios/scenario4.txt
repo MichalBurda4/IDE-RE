@@ -1,0 +1,16 @@
+UC 6 utworz Wykorzystanie_punktow
+Opis: Pracownik tworzy Formularz_punktow. Klient oraz System_podliczenia dostarcza lub weryfikuje istotne informacje.
+Warunki wstepne: 1.  Pracownik jest upowazniony.
+Aktorzy: Pracownik (typ: tworca), Klient (typ: towarzyszacy)
+Glowny Przeplyw:
+1. Pracownik <aktywnosc> wprowadza </a> parametr Formularz_punktow <parametr> karta_na_punkty </p>.
+2. System <aktywnosc> przetwarza </a> wprowadzone dane Formularza_punktow <parametr> karta_na_punkty </p>.
+3. Klient <aktywnosc> wybiera </a> dane z listy <parametr> przedmiot_za_punkty </p>.
+4. Pracownik <aktywnosc> wprowadza </a> parametr Formularza_punktow <parametr> przedmiot_za_punkty </p>.
+5. System <aktywnosc> przetwarza </a> wprowadzone dane Formularza_punktow <parametr> przedmiot_za_punkty </p>.
+6. Pracownikowi <aktywnosc> wyswietla sie </a> <parametr> ilosc_punktow </p>.
+Alternatywny Przeplyw:
+3.1. Pracownikowi <aktywnosc> wyswietla sie </a> <parametr> brak_punktow_na_koncie </p>.
+3.2. <aktywnosc> Przeniesienie </a> Pracownika do <parametr> strony startowej </p>.
+Wyjatki: 2.1. <parametr> karta_na_punkty </p> z Formularza_platnosci jest niepoprawna: Nieprawidlowe dane wejsciowe.
+Warunki koncowe: Formularz_punktow jest w stanie Zakonczony.

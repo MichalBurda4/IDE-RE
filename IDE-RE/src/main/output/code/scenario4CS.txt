@@ -1,0 +1,31 @@
+public class Wykorzystanie_punktow 
+{
+	public void wprowadza(string argument){}
+
+	public void przetwarza(string argument){}
+
+	public void wybiera(string argument){}
+
+	public void wyswietla_sie(string argument){}
+
+	public void Przeniesienie(string argument){}
+
+	public void run()
+	{
+		string karta_na_punkty, przedmiot_za_punkty, ilosc_punktow, brak_punktow_na_koncie, strona_glowna;
+
+		wprowadza(karta_na_punkty);
+		przetwarza(karta_na_punkty);
+
+		if(brak_punktow_na_koncie)
+		{
+			wyswietla sie(brak_punktow_na_koncie);
+			Przeniesienie(strona_glowna);
+			return;
+		}
+		wybiera(przedmiot_za_punkty);
+		wprowadza(przedmiot_za_punkty);
+		przetwarza(przedmiot_za_punkty);
+		wyswietla_sie(ilosc_punktow);
+	}
+}

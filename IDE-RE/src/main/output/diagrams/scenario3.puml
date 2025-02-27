@@ -1,0 +1,11 @@
+@startuml
+[*] --> S2 : "utworz Placenie_gotowka" 
+state "wybiera platnosc_gotowka" as S2
+state "wprowadza kwota" as S3
+S2 --> S3
+state "przetwarza kwota" as S4
+S3 --> S4
+state "wyswietla sie reszta" as S5
+S4 --> S5
+S5 --> [*] : Koniec
+@enduml

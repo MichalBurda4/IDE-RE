@@ -1,0 +1,33 @@
+class Wykorzystanie_punktow {
+public:
+	void wprowadza(const std::string& argument){}
+
+	void przetwarza(const std::string& argument){}
+
+	void wybiera(const std::string& argument){}
+
+	void wyswietla_sie(const std::string& argument){}
+
+	void Przeniesienie(const std::string& argument){}
+
+	void run(){
+		std::string karta_na_punkty;
+		std::string przedmiot_za_punkty;
+		std::string ilosc_punktow;
+		std::string brak_punktow_na_koncie;
+		std::string strona_glowna;
+
+		wprowadza(karta_na_punkty);
+		przetwarza(karta_na_punkty);
+
+		if(brak_punktow_na_koncie){
+			wyswietla sie(brak_punktow_na_koncie);
+			Przeniesienie(strona_glowna);
+			return;
+		}
+		wybiera(przedmiot_za_punkty);
+		wprowadza(przedmiot_za_punkty);
+		przetwarza(przedmiot_za_punkty);
+		wyswietla_sie(ilosc_punktow);
+	}
+}

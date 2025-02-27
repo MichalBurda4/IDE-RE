@@ -1,0 +1,37 @@
+class Wykorzystanie_punktow:
+
+	def wprowadza(self, argument):
+		pass
+
+	def przetwarza(self, argument):
+		pass
+
+	def wybiera(self, argument):
+		pass
+
+	def wyswietla_sie(self, argument):
+		pass
+
+	def Przeniesienie(self, argument):
+		pass
+
+	def run(self):
+		karta_na_punkty = None
+		przedmiot_za_punkty = None
+		ilosc_punktow = None
+		brak_punktow_na_koncie = None
+		strona_glowna = None
+
+		self.wprowadza(karta_na_punkty)
+		self.przetwarza(karta_na_punkty)
+
+		if brak_punktow_na_koncie:
+			self.wyswietla sie(brak_punktow_na_koncie)
+			self.Przeniesienie(strona_glowna)
+			return
+
+		self.wybiera(przedmiot_za_punkty)
+		self.wprowadza(przedmiot_za_punkty)
+		self.przetwarza(przedmiot_za_punkty)
+		self.wyswietla_sie(ilosc_punktow)
+

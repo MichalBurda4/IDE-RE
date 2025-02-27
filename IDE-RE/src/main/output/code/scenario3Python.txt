@@ -1,0 +1,23 @@
+class Placenie_gotowka:
+
+	def wybiera(self, argument):
+		pass
+
+	def wprowadza(self, argument):
+		pass
+
+	def przetwarza(self, argument):
+		pass
+
+	def wyswietla_sie(self, argument):
+		pass
+
+	def run(self):
+		platnosc_gotowka = None
+		kwota = None
+		reszta = None
+
+		self.wybiera(platnosc_gotowka)
+		self.wprowadza(kwota)
+		self.przetwarza(kwota)
+		self.wyswietla_sie(reszta)

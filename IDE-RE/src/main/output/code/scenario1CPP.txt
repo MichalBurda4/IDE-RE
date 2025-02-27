@@ -1,0 +1,31 @@
+class Placenie_gotowka {
+public:
+	void wybiera(const std::string& argument){}
+
+	void wprowadza(const std::string& argument){}
+
+	void przetwarza(const std::string& argument){}
+
+	void wyswietla_sie(const std::string& argument){}
+
+	void Przeniesienie(const std::string& argument){}
+
+	void run(){
+		std::string platnosc_gotowka;
+		std::string kwota;
+		std::string reszta;
+		std::string brak_srodkow_w_kasie;
+		std::string punktu_1;
+
+		wybiera(platnosc_gotowka);
+		wprowadza(kwota);
+		przetwarza(kwota);
+
+		if(brak_srodkow_w_kasie){
+			wyswietla sie(brak_srodkow_w_kasie);
+			Przeniesienie(punktu_1);
+			return;
+		}
+		wyswietla_sie(reszta);
+	}
+}

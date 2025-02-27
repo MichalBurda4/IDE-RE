@@ -1,0 +1,37 @@
+public class Rezerwacja_Pokoju_Hotelowego {
+
+	public void wybiera(String argument){}
+
+	public void przetwarza(String argument){}
+
+	public void wprowadza(String argument){}
+
+	public void wyswietla_sie(String argument){}
+
+	public void Przeniesienie(String argument){}
+
+	public void run(){
+
+		String specyfikacja_pokoju, dane_osobiste, prosba, rezerwacja, brak_odpowiedniego_pokoju, strona_glowna, zle_podane_dane;
+
+		wybiera(specyfikacja_pokoju);
+		przetwarza(specyfikacja_pokoju);
+
+		if(brak_odpowiedniego_pokoju){
+			wyswietla sie(brak_odpowiedniego_pokoju);
+			Przeniesienie(strona_glowna);
+			return;
+		}
+		wprowadza(dane_osobiste);
+		przetwarza(dane_osobiste);
+
+		if(zle_podane_dane){
+			wyswietla sie(zle_podane_dane);
+			Przeniesienie(strona_glowna);
+			return;
+		}
+		wprowadza(prosba);
+		przetwarza(prosba);
+		wyswietla_sie(rezerwacja);
+	}
+}

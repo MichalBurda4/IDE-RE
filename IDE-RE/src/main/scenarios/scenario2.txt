@@ -1,0 +1,22 @@
+UC 1 utworz Rezerwacja_Pokoju_Hotelowego
+Opis: Klient tworzy Rezerwacje. Klient oraz System_hotelowy dostarcza lub weryfikuje istotne informacje.
+Warunki wstepne: 1. Utworzenie_konta jest w stanie Zakonczony. Uruchomiony przez UC 11 utworz Rezerwacja_Pokoju_Hotelowego.
+Aktorzy: Klient (typ: tworca)
+Glowny Przeplyw:
+1. Klient <aktywnosc> wybiera </a> dane z listy <parametr> specyfikacja_pokoju </p>.
+2. System <aktywnosc> przetwarza </a> wprowadzone dane Listy <parametr> specyfikacja_pokoju </p>.
+3. Klient <aktywnosc> wprowadza </a> parametr Formularza_dane_osobiste <parametr> dane_osobiste </p>.
+4. System <aktywnosc> przetwarza </a> wprowadzone dane Formularz_dane_osobiste <parametr> dane_osobiste </p>.
+5. Klient <aktywnosc> wprowadza </a> parametr Formularz_spcecjalnych_prosb <parametr> prosba </p>.
+6. System <aktywnosc> przetwarza </a> wprowadzone dane Formularz_spcecjalnych_prosb <parametr> prosba </p>.
+7. Klientowi <aktywnosc> wyswietla sie </a> <parametr> rezerwacja </p>.
+Alternatywny Przeplyw:
+3.1. Klientowi <aktywnosc> wyswietla sie </a> <parametr> brak_odpowiedniego_pokoju </p>.
+3.2. <aktywnosc> Przeniesienie </a> Klienta do <parametr> strony startowej </p>.
+5.1. Klientowi <aktywnosc> wyswietla sie </a> <parametr> zle_podane_dane </p>.
+5.2. <aktywnosc> Przeniesienie </a> Klienta do <parametr> strony startowej </p>.
+Wyjatki: 7.1. <parametr> prosba </p> z Formularza_specjalnych_prosb
+jest niepoprawna: Nieprawidlowe dane wejsciowe.
+Warunki koncowe: Formularz_rejestracji jest w stanie Zakonczony.
+
+

@@ -1,0 +1,27 @@
+@startuml
+[*] --> S2 : "utworz Rezerwacja_Pokoju_Hotelowego" 
+state "wybiera specyfikacja_pokoju" as S2
+state "przetwarza specyfikacja_pokoju" as S3
+S2 --> S3
+state "wprowadza dane_osobiste" as S4
+state "Decyzja" as D4
+S3 --> D4 : Decyzja
+state "wyswietla sie brak_odpowiedniego_pokoju" as A5
+D4 --> A5 : Alternatywny przepływ
+A5 --> [*] : Powrót do strony startowej
+D4 --> S4 : Główny przepływ
+state "przetwarza dane_osobiste" as S6
+S4 --> S6
+state "wprowadza prosba" as S7
+state "Decyzja" as D7
+S6 --> D7 : Decyzja
+state "wyswietla sie zle_podane_dane" as A8
+D7 --> A8 : Alternatywny przepływ
+A8 --> [*] : Powrót do strony startowej
+D7 --> S7 : Główny przepływ
+state "przetwarza prosba" as S9
+S7 --> S9
+state "wyswietla sie rezerwacja" as S10
+S9 --> S10
+S10 --> [*] : Koniec
+@enduml

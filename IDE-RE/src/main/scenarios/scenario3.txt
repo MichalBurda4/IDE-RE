@@ -1,0 +1,13 @@
+UC 1 utworz Placenie_gotowka
+Opis: Pracownik tworzy Formularz_platnosci. Klient oraz System_platyniczy dostarcza lub weryfikuje istotne informacje.
+Warunki wstepne: 1. Tankowanie jest w stanie Zakonczony. Uruchomiony przez UC 11 utworz Placenie.
+Aktorzy: Pracownik (typ: tworca), Klient (typ: towarzyszacy)
+Glowny Przeplyw:
+1. Pracownik <aktywnosc> wybiera </a> dane z listy <parametr> platnosc_gotowka </p>.
+2. Pracownik <aktywnosc> wprowadza </a> parametr Formularza_platnosci <parametr> kwota </p>.
+3. System <aktywnosc> przetwarza </a> wprowadzone dane Formularza_platnosci <parametr> kwota </p>.
+4. Pracownikowi <aktywnosc> wyswietla sie </a> <parametr> reszta </p>.
+Alternatywny Przeplyw:
+Wyjatki: 2.1. <parametr> kwota </p> z Formularza_platnosci jest niepoprawna: Nieprawidlowe dane wejsciowe.
+Warunki koncowe: Formularz_platnosci jest w stanie Zakonczony.
+
